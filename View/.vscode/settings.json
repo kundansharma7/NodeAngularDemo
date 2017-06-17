@@ -1,0 +1,13 @@
+{
+    "angulardoc.repoId": "bac5b3c5-d070-4984-a1cc-ebb30f7738ea",
+    "angulardoc.lastSync": 0,
+    "files.exclude": {
+        // include the defaults from VS Code
+        "**/.git": true,
+        "**/.DS_Store": true,
+
+        // exclude .js and .js.map files, when in a TypeScript project
+        "**/*.js": { "when": "$(basename).ts"},
+        "**/*.js.map": true
+    }
+}

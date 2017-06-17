@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <div class="panel panel-primary topMargin">
+            <div class="panel-heading">
+                <h3 class="panel-title">Login</h3>
+            </div>
+            <div class="panel-body">
+                <!--<form method="post">-->
+                    <div class="form-group">
+                        <label for="usr">User Id:</label>
+                        <input type="text" [(ngModel)]='usrName' class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" [(ngModel)]='usrPass' class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" (click)="login()" type="submit">Login</button>
+                        <button class="btn btn-primary" type="reset">Reset</button>
+                    </div>
+                <!--</form>-->
+            </div>
+        </div>
+    </div>
+</div>

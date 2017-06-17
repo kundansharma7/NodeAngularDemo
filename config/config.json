@@ -1,0 +1,76 @@
+{
+    "settings": {
+        "database": {
+            "host": "127.0.0.1",
+            "port": 3306,
+            "user": "root",
+            "password": "root",
+            "database": "test",
+            "multipleStatements": "true"
+        },
+        "statusCode": {
+            "informational": {
+                "continue": "100",
+                "switching_protocols": "101",
+                "processing": "102"
+            },
+            "success": {
+                "OK": "200",
+                "created": "201",
+                "accepted": "202",
+                "non_authoritative_information": "203",
+                "no_content": "204",
+                "reset_content": "205",
+                "partial_content": "206",
+                "multi_status": "207",
+                "already_reported": "208",
+                "IM_used": "226"
+            },
+            "redirection": {
+                "multiple_choices": "300",
+                "moved_permanently": "301",
+                "found": "302",
+                "see_other": "303",
+                "not_modified": "304",
+                "use_proxy": "305",
+                "switch_proxy": "306",
+                "temporary_redirect": "307",
+                "permanent redirect": "308"
+            },
+            "clientError": {
+                "bad_request": "400",
+                "unauthorized": "401",
+                "payment_required": "402",
+                "forbidden": "403",
+                "not_found": "404",
+                "method_not_allowed": "405",
+                "not_applicable": "406",
+                "proxy_auth_required": "407",
+                "request_timeout": "408",
+                "conflict": "409",
+                "gone": "410",
+                "unsupported_media_type": "415",
+                "authentication_timeout": "419",
+                "locked": "423",
+                "failed_dependency": "424",
+                "too_many_requests": "429",
+                "request_header_too_large": "431",
+                "login_timeout": "440",
+                "no_response": "444",
+                "redirect": "451",
+                "token_expired": "498"
+            },
+            "serverError": {
+                "internal_server_error": "500",
+                "bad_gateway": "502",
+                "service_unavailable": "503",
+                "gateway_timeout": "504",
+                "http_version_not_supported": "505",
+                "insufficient_storage": "507",
+                "loop_detected": "508",
+                "network_auth_error": "511",
+                "network_error": "599"
+            }
+        }
+    }
+}

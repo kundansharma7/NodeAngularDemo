@@ -1,0 +1,57 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="table-responsive" [hidden]="hiddenElement">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Employee Name</th>
+                        <th>Employee Address</th>
+                        <th>Employee Salary</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let d of result">
+                        <td>{{d.id}}</td>
+                        <td>{{d.ename}}</td>
+                        <td>{{d.eaddress}}</td>
+                        <td>{{d.esal}}</td>
+                        <td><span class="glyphicon glyphicon-pencil" (click)="editRecord(d)"></span></td>
+                        <td><span class="glyphicon glyphicon-trash" (click)="deleteRecord(d.id)"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row" [hidden]="!hiddenElement">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Edit Employee Records</h3>
+                    </div>
+                    <div class="panel-body">
+                        <!--<form method="post">-->
+                        <div class="form-group">
+                            <label for="usr">Name:</label>
+                            <input type="text" [(ngModel)]='editedEmpRecord.ename' class="form-control" id="edname">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Address:</label>
+                            <input type="text" [(ngModel)]='editedEmpRecord.eaddress' class="form-control" id="edaddress">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Salary:</label>
+                            <input type="text" [(ngModel)]='editedEmpRecord.esal' class="form-control" id="edsal">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" (click)="saveEditedRecord()" type="button">Save</button>
+                            <button class="btn btn-primary" type="button" (click)="cancel()">Cancel</button>
+                        </div>
+                        <!--</form>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
