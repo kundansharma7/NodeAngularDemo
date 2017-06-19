@@ -33,7 +33,7 @@ Object.keys(db).forEach(function(modelname){
     }
 })
 */
-const Sequelize = require('Sequelize');
+const Sequelize = require('sequelize');
 module.exports = function (app) {
     //"use strict";
     var host = app.locals.database.host,
