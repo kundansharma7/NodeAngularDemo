@@ -3,7 +3,7 @@ Steps For starting and Using the Demo Project
 
 
 
-Step1 - Download the demo project. Check the db configruatin and create only database matching project matching in 'config/config.json', table autometecally created by sequelize.
+Step1 - Download the demo project. Check the db configruatin(port number, user id, password and db name) and create only database matching in 'config/config.json', table autometically created by sequelize.
 
 Step2 - Open terminal, go the demo directory and write npm install.
 
