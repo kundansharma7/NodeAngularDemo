@@ -1,6 +1,7 @@
 Steps For starting and Using the Demo  Project
 
 
+  
 
 
 Step1 - Download the demo project. Check the db configruatin(port number, user id, password and db name) and create only database matching in 'config/config.json', table autometically created by sequelize.
